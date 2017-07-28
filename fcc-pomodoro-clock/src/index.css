@@ -1,0 +1,58 @@
+@import url('//at.alicdn.com/t/font_e4mv33f6ro0z4cxr.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css');
+@import url(https://fonts.googleapis.com/css?family=Lobster);
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: #c6dde3;
+}
+
+.title {
+  font-size: 50px;
+  text-align: center;
+  margin: 20px 20px 40px 20px;
+  color: #02657d;
+  font-family: lobster;
+}
+
+.btn {
+  margin: 10px;
+  width: 100px;
+}
+
+.panel-time {
+  margin: 20px;
+  text-align: center;
+}
+
+.panel-settings {
+  text-align: center;
+}
+
+.mode-type {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.time-diplay {
+  font-size: 70px;
+  line-height: 70px;
+  margin-bottom: 30px;
+}
+
+.svg-icon-tomato {
+  width: 2em;
+  height: 2em;
+  vertical-align: -0.19em;
+  fill: grey;
+  overflow: hidden;
+}
+
+.icon-tomato {
+  font-size: 30px;
+  color: #7e7e7e;
+}
+
+.icon-settings {}
