@@ -101,7 +101,7 @@ class App extends React.Component {
     if (key === '.') {
       if (this.numKeys.length === 0) {
         this.numKeys = [0, '.'];
-      } else if (this.numKeys.indexOf(key) !== -1 ) {
+      } else if (this.numKeys.indexOf(key) === -1 ) {
         this.numKeys.push(key);
       }
     } else {
@@ -109,7 +109,7 @@ class App extends React.Component {
     }
     
     this.prevResult = key;
-    this.display();
+    this.display(key);
 
   }
 
@@ -151,7 +151,12 @@ class App extends React.Component {
       cal.pop();
       history.pop();
     }
-
+    if(history.length != cal.length) {
+      history = [];
+      for(let i = 0; i < cal.length; i ++) {
+        history[i] = cal[i];
+      }
+    }
     history.push(key);
     cal.push(key);
 
@@ -218,12 +223,13 @@ class App extends React.Component {
   }
 
   display = (key) => {
-    // console.log('thisKey', this.key);
-    // console.log('numKeys', this.numKeys);
-    // console.log('Cal', this.cal);
-    // console.log('History', this.history);
-    // console.log('result', this.result);
-    // console.log('---------');
+    console.log('this.Key', this.key);
+    console.log('numKeys', this.numKeys);
+    console.log('Cal', this.cal);
+    console.log('History', this.history);
+    console.log('result', this.result);
+    console.log('---------');
+
     let firstRow = this.history.join('') ? this.history.join('') : 0,
       secondRow = this.numKeys.join('') ? this.numKeys.join('') : 0;
 
@@ -231,7 +237,7 @@ class App extends React.Component {
       secondRow = this.result;
 
     } else if (key === '=') {
-      this.history = [this.result];
+      // this.history = [this.result];
       secondRow = this.result;
     }
 
@@ -242,13 +248,6 @@ class App extends React.Component {
     }))
 
   }
-
-
-
-
-
-
-
 
 
 
