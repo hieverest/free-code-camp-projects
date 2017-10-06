@@ -1,3 +1,7 @@
+Written in ReactJS. Has basic funtions of plus, minus, divide and multiply, all clear and clear entry etc.  
+  
+Please see demo here: https://codepen.io/hieverest/full/WjaMVW/
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
