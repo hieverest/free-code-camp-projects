@@ -1,0 +1,92 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: #75B0BE;
+}
+
+#banner {
+  color: white;
+  background: #012E39;
+  height: 100px;
+  text-align: center;
+  padding: 20px;
+  font-size: 30px;
+  font-weight: 800;
+
+}
+
+.channel {
+  color: white;
+  border-radius: 10px;
+  position: relative;
+  left: 25%;
+  height: 145px;
+  margin: 30px;
+  width: 45%;
+  padding: 30px;
+  box-shadow: 2px 2px 5px #012E39;
+  background: #3E8393;
+}
+.channel-loading {
+  color: white;
+  border-radius: 10px;
+  position: relative;
+  left: 25%;
+  height: 145px;
+  margin: 30px;
+  width: 45%;
+  padding: 30px;
+  box-shadow: 2px 2px 5px #012E39;
+  background: #3E8393;
+  text-align: center;
+  font-size: 50px;
+}
+.fa-spinner {
+  animation: loading-spin infinite 5s linear;
+}
+
+@keyframes loading-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+img {
+  border-radius: 30px;
+  width: 100px;
+  position: absolute;
+  top: 20px;
+}
+
+.logo {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.info {
+  display: inline-block;
+  position: absolute;
+  top: 30px;
+  left: 150px;
+}
+
+.name-row {
+  margin-bottom: 10px;
+  color: white;
+}
+
+.buttons {
+  text-align: center;
+}
+
+.btn {
+  margin: 10px;
+}
+.timeout {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
