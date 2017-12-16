@@ -50,9 +50,7 @@ class App extends React.Component {
   constructor() {
     super();
     this.state = {
-      number: [],
       operator: "",
-      curNum: 0,
       opPressed: false,
       firstRow: 0,
       secondRow: 0
@@ -345,9 +343,6 @@ class App extends React.Component {
 
 
   render() {
-    let number = this.state.number.slice(); // Make a copy to this.state.number
-    let curNum = this.state.curNum;
-
     const firstRow = this.state.firstRow,
       secondRow = this.state.secondRow;
 
